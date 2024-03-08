@@ -1,0 +1,168 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Homework3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+  
+  <script>
+      var age = 34;
+
+      if (age < 13) {
+         document.write("child");        //  child
+      } else if (age < 19) {
+        document.write("adolescent");   //  adolescent
+      } else {
+        document.write("adult");        //  adult
+      }
+     document.write("<br>")
+
+
+    document.write("Hi I am Md Golam Kibria");
+    document.write("<br>")
+    console.log("I am Wed Developer");
+
+   // var use two variable No Error======================================
+     var name = "Golam Kibria";
+     var name = "Meraj";//No Error
+     document.write(name);
+     console.log(name);
+
+     document.write("<br>");
+
+      //let use two variable SyntaxError: redeclaration of let name========
+
+      let name1 = "MD. Golam Kibria";
+     // let name1 = "Meraj";//SyntaxError: redeclaration of let name
+      // name1 = "Meraj";//No Error
+       console.log(name1);
+       document.write(name1);
+
+      document.write("<br>");
+      // const use two variable SyntaxError: redeclaration of let name===
+
+       const name2 = "Meraj";//SyntaxError: redeclaration of let name
+       //const name2 = "Hi I an a Bangladeshi";
+         //name2 = "Hi I an a Bangladeshi";//TypeError: invalid assignment to const 'name2'
+       //let name2 = "Hi I an a Bangladeshi";//SyntaxError: redeclaration of const name2
+        console.log(name2);
+        document.write(name2);
+
+        document.write("<br>");
+
+     //function declaration==========================================
+
+       function name3(){
+        document.write("I am writting Javascript");
+        console.log(" I am reading Themezone Academy");
+       }
+       name3();
+
+       document.write("<br>");
+
+       function sum(){
+        var a = 10;
+        var b = 5;
+        var c = a + b;
+        document.write(c);
+        console.log(c);
+       }
+       sum();
+       document.write("<br>");
+
+       function name4(fullname){
+        document.write("My Name is" + fullname+ "<br>");
+       }
+       name4(" Md. Golam Kibria");
+       name4(" Md. Meraj");
+
+      document.write("<br>");
+
+// use click function===================================================
+
+      function call(){
+        document.write("Hello Developer");
+    }
+      function calls(name, age){
+        document.write(name+ "is " + age +" years old");
+    }
+//use return function===============================================
+    function one(first, last){
+      var full;
+      full = first + last;
+
+      return full;
+    }
+    function two(){
+      var result;
+      result = one(20, 10);
+      document.write(result);
+    }
+  // two();
+  document.write("<br>");
+
+  //Use consele.log ================================================
+  function test(){
+  console.log("Hi I am web developer");
+  }
+  test();
+  document.write("<br>");
+
+  function test1(){
+    return"Hello Developer";
+  }
+   var val = test1()
+
+    console.log(val);
+    //Use parameter ================================================
+  function add(num1, num2){
+    var sum = num1 + num2;
+    console.log(" The sum of the values entered " + sum);
+    document.write(" The sum of the values entered " + sum);
+   }
+   add(10,20);
+document.write("<br>");
+  function add1(a, b=1){
+    return a+b;
+  }
+  console.log(add1(4));
+  document.write(add1(4));
+
+  document.write("<br>");
+  //Javascript Home work3=============================================
+   
+  //  var g = Number(prompt("Enter First Number"));
+	  //  var i = Number(prompt("Enter another Number")); 
+	  //  var sum= (g+i);
+	  //  document.write(sum);
+
+	var g = Number(prompt("Enter First Number"));
+	var i = Number(prompt("Enter another Number")); 
+	var sum=parseInt(g+i);
+	document.write(sum);
+
+  </script>
+  <p>I am writting Javascript</p>
+<form>
+  <input type="button" onclick="call()" value="Click Me">
+  <input type="button" onclick="calls(' Golam Kibria ' , '40')" value="Click Me">
+  <input type="button" onclick="two()" value="Click Me">
+</form>
+</div>
+ 
+</body>
+</html>
+<select>
+            <option>Select Year</option>
+      
+      <script>
+          for(i=1900; i<=2024; i++) {
+            document.write("<option>"+ i +"</option>");
+          } 
+      </script>
+      </select>

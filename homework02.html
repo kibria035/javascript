@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Homework2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+<button id="demo" type="button" class="btn btn-warning fs-2"></button>
+  
+  <script>
+document.write("<br>");
+  //Use if conditional statement
+  if(10>5){
+  document.write("Hello Developer");
+ }
+ document.write("<br>");
+ var num = 10;
+if (num > 5) {
+  document.write("num is greater than 5");
+}
+
+document.write("<br>");
+var num = 10;
+if (num > 5 && num < 50) {
+  document.write("num is greater than 5 AND less than 50");
+}
+document.write("<br>");
+
+if(5<10 || 1>5){
+  document.write("I am writting Javascript");
+} 
+document.write("<br>");
+
+var a =20;
+var b = 10;
+if(a>b){
+  document.write("I am come form Patuakhali");
+}
+document.write("<br>");
+var name = "Kibria";
+
+if(name == "Kibria"){
+  document.write("Yes I am Md Golam Kibria");
+}
+document.write("<br>");
+var num = 10;
+
+  if (num > 5 && num < 50) {
+
+    document.write("num is greater than 5 AND less than 50");
+  }
+  document.write("<br>");
+
+//Use Multiple if conditional statement
+var c = 75;
+if(c < 60)
+document.write("Failed");
+if(c<=70 && c>60)
+document.write("0");
+if(c>70 && c<100)
+document.write("This is Kibria");
+
+
+
+
+document.write("<br>");
+//Use nested if statement
+
+var d = 20;
+if( d < 20){
+ if(d == 10)
+ {
+  document.write("This  is True");
+ } 
+}
+
+var d = 10;
+if( d < 20){
+  if(d == 10)
+ {
+  document.write("This  is True");
+ } 
+}
+document.write("<br>");
+
+//use if & else statement
+
+var age = 10;
+
+if (age >= 18) {
+  document.write("Jhoha is an adult.");
+} else {
+  document.write("Jhoha is a child.");
+}
+
+
+document.write("<br>");
+
+//Use else if statement
+var num = 8;
+
+  if (num == 10) {
+
+    document.write("Correct, the mystery number is 10");
+
+  } else if (num > 10) {
+
+    document.write("You've guessed too high, try again");
+
+  } else if (num < 10) {
+
+    document.write("You've guessed too low, try again");
+  }
+
+  document.write("<br>");
+
+  //Use Switch statement
+var e = 3;
+switch(e){
+  case 0:
+  document.write("Zero");
+  break;
+  case 1:
+  document.write("One");
+  break;
+  case 2:
+  document.write("Two");
+  break;
+  case 3:
+  document.write("Three");
+  break;
+  case 4:
+  document.write("Four");
+  break;
+}
+  document.write("<br>");
+  //Use find day
+
+  var day;
+  switch(new Date().getDay()){
+   
+    case 0:
+      day = "Sunday";
+      break;
+    case 1:
+      day = "Monday";
+      break;
+    case 2:
+      day = "Tuesday";
+      break;
+    case 3:
+      day = "Wednesday";
+      break;
+    case 4:
+      day = "Thursday";
+      break;
+    case 5:
+      day = "Friday";
+      break;
+      case 6:
+      day = "Saturday";
+      break;
+  }
+  document.getElementById('demo').innerHTML = "Today is " +day;
+  document.write("<br>");
+ </script>   
+
+ <script> 
+  function name(){
+    document.write("Hello I'm Md. Golam Kibria");
+  }
+  name();
+  document.write("<br>");
+</script>
+
+
+<div class="content">
+  <div class="display">
+    <button id="time" class="btn btn-success fs-1 p-2"></button>
+  </div>
+  <span></span>
+  <span></span>
+</div>
+
+
+<script>
+
+  setInterval(()=>{
+    const time = document.querySelector(".display #time");
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let day_night = "AM";
+    if(hours > 12){
+      day_night = "PM";
+      hours = hours - 12;
+    }
+    if(seconds < 10){
+      seconds = "0" + seconds;
+    }
+    if(minutes < 10){
+      minutes = "0" + minutes;
+    }
+    if(hours < 10){
+      hours = "0" + hours;
+    }
+    time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+  });
+</script>
+
+</div>
+ 
+</body>
+</html>
