@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Homework7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+<h5> DOM Means document Object Model</h5>
+<!-- <p>
+    getElementById("");
+    getElementByClassname();
+    getElementByName();
+    getElementByTagName();
+    querySelector();
+    querySelectorAll();
+</p> -->
+<p id="one">getElementById</p>
+<p id="two">Hi I am Webdeveloper</p>
+<p class="cone">Hi I am Kibria</p>
+<p class="cone">getElementByClassname()</p>
+<p name="wone">GetElementByName(1)</p>
+<p name="wone">GetElementByName(2)</p>
+<p name="wone">GetElementByName(3)</p>
+<h1 id="four">getElementByTagName(1)</h1>
+<h1 id="five">getElementByTagName(2)</h1>
+<h1 >getElementByTagName(3)</h1>
+
+<Script>
+//document.getElementById('one');
+//let idone = document.getElementById("one");
+//idone.innerHTML=("Hello Js Developer");
+
+
+//document.getElementsByClassName("cone")[0];
+// let classonew = document.getElementsByClassName("cone")[1];
+// classonew.innerHTML = ("Hi I am Web Designer");
+
+
+//document.getElementsByName("wone");
+//let pname = document.getElementsByName("wone")[0];
+//pname.innerHTML =("Hi I am Golam Kibria");
+
+
+//document.getElementsByTagName("h1")[0];
+// let htag = document.getElementsByTagName("h1")[1];
+// htag.innerHTML= ("Hello I am Golam Kibria");
+
+
+
+//document.querySelector("#four");
+let wfour = document.querySelector("#four");
+wfour.innerHTML= ("Hello Heading Query Selector");
+</Script>
+
+
+ <!---==================================Home Work=================================--> 
+<p >GetElementByName(7)</p>
+<p >GetElementByName(8)</p>
+<p >GetElementByName(9)</p>
+
+<script>
+    const newlist = document.querySelectorAll("p")[9];
+    newlist.innerHTML = ("Hi I am Md Golam Kibria");
+</script>
+
+
+<h1>Window Document Object</h1>
+<h2>The URL Property</h2>
+
+<p id="demo"></p>
+
+<script>
+    //use document.URL
+    
+let url = document.URL;
+document.getElementById("demo").innerHTML = url;
+</script>
+
+<p>Click anywhere in the document to display "Hello World!".</p>
+
+<p id="demo"></p>
+
+<script>
+
+    // Use addEventListener
+document.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+</div>
+    
+</body>
+</html>
